@@ -1,0 +1,303 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Typography */
+h1 {
+    font-size: 1.5rem;
+}
+
+.articles-section h1 {
+    margin: 2em 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.articles-section p {
+    letter-spacing: 1px;
+    margin-top: 0;
+    margin-bottom: 2.5em;
+}
+
+.articles-section h3 {
+    margin: 0.4em 0;
+}
+
+h2 {
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.title-about {
+    font-size: 2rem;
+    margin: 1em;
+    text-align: center;
+}
+
+footer p, h4 {
+    text-align: center;
+}
+
+.time {
+    font-size: 0.75rem;
+}
+
+p {
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Layout */
+.hero-section {
+    background-image: url('./images/fullstack.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fffffffe;
+    padding: 1em;
+    text-shadow: 5px 10px 10px black;
+}
+
+.articles-section, .posts-container, .about-section{
+    margin: 1em;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    margin: 1em;
+}
+
+/* Nav */
+.nav-bar ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-bar {
+    background-color: #212121;
+}
+
+.fa-bars {
+    font-size: 2rem;
+    margin: auto 0 auto auto;
+    cursor: pointer;
+}
+
+.nav-bar ul li {
+    margin-bottom: 1em;
+    padding: 0 1em;
+    width: 100%;
+}
+
+.nav-bar ul li a {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    padding: 1em 1em;
+}
+
+.nav-bar ul li a:hover {
+    background-color: #333;
+    color: whitesmoke;
+    font-weight: 900;
+}
+
+a {
+    display: block;
+    color: #212121;
+    text-align: center;
+}
+
+/* Images */
+.header-container img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.keita-pic {
+    display: block;
+    margin: 5em auto 1em;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.university img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 1em auto;
+}
+
+.articles-section img, .posts-container img{
+    width: 100%;
+    height: auto;
+}
+
+/* Footer */
+footer {
+    background-color: #202020;
+    color: #ECECEC;
+    padding: 0.5em 0;
+}
+
+/* Responsive Design */
+
+/* Tablets - 768px and above */
+@media (min-width: 768px) {
+    #menu-bar {
+        display: none;
+    }
+
+    .nav-bar ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nav-bar {
+        background: none;
+    }
+
+    .nav-bar ul li {
+        margin-bottom: 0;
+        padding: 0 1em;
+    }
+
+    .nav-bar ul li a {
+        color: #212121;
+    }
+
+    .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 2em;
+    }
+
+    .articles-section {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1em;
+        padding: 2em;
+        /* text-align: center; */
+        
+    }
+  
+    h4 a{
+        margin: 0 0 2em 0;
+        font-size: 1.5rem;
+        
+    }
+
+    .hero-section{
+        padding: 5em;
+        min-height: 50vh;
+        
+    }
+    .hero-section p{
+        width: 600px;
+        margin: 0 auto;
+    }
+
+    .title-about {
+        font-size: 2.5rem;
+    }
+    .about-section{
+        margin: 0 auto;
+        width: 70%;
+        text-align: center;
+    }
+    .keita-pic {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+/* Small Desktops - 1024px and above */
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .title-about {
+        font-size: 3rem;
+    }
+
+    .articles-section {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 3em;
+    }
+    /* kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk */
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .posts-container img{
+        display: block;
+        margin: 0 auto;
+        width: 70%;
+    }
+    .posts-container{
+        text-align: center;
+        width: 90%;
+    }
+    .posts-container p{
+        width: 50%;
+        margin: 0 auto;
+    }
+    .keita-pic {
+        width: 200px;
+        height: 200px;
+    }
+
+    .university img {
+        max-width: 700px;
+    }
+}
+
+/* Large Screens - 1280px and above */
+@media (min-width: 1280px) {
+    /* .articles-section {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1em;
+        padding: 2em;
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+    } */
+ 
+
+    .title-about {
+        font-size: 3.5rem;
+        margin: 2em 0 1em;
+    }
+ 
+    p {
+        font-size: 1.125rem;
+        line-height: 1.75;
+    }
+
+    .university img {
+        max-width: 800px;
+    }
+
+}
