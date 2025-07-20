@@ -3,9 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>My learning journal</title>
 </head>
 <body>
-    <h1>Hello world i'm Keita</h1>
+    <header class="header-container">
+        <div class="title">
+            <img src="./images/logo.jpg" alt="logo of a journal">
+            <h1>My learning journal</h1>
+            <i class="fa-solid fa-bars" id="menu-bar"></i>
+        </div>
+
+        <nav class="nav-bar">
+            <ul class="nav-links" id="nav-links">
+                <li> <a href="#home">Home</a></li>
+                <li> <a href="./posts.html">Posts</a></li>
+                <li> <a href="./about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-section" role="img" aria-label="computer showing the code its screen">
+            <h2 class="time">JULY 23, 2025</h2>
+            <h2>My new journey as a bootcamp student.</h2>
+            <p>After several months of learning in the Frontend Developer Career Path, 
+                I've made the big jump over 
+                to the Bootcamp to get expert code 
+                reviews of my Solo Projects projects and meet 
+                like-minded peers.</p>
+         
+        </section>
+        <section class="articles-section home">
+            <article>
+                <img src="./images/c8.jpg" alt="computer with white background">
+                <h2 class="time">JULY 23, 2025</h2>
+                <h3>Blog one</h3>
+                <p>I'm excited to start a new learning journey as a 
+                    Scrimba Bootcamp student! After several months of 
+                    learning in the Frontend Developer Career Path.</p>
+            </article>
+            <article>
+                <img src="./images/mysql.jpg" alt="computer with white background">
+                <h2 class="time">JULY 23, 2025</h2>
+                <h3>Blog two</h3>
+                <p>Diving into the world of backend development, I’ve started learning MySQL to manage databases efficiently. 
+           Understanding how to structure and query relational data is transforming the way I build full-stack applications.</p>
+            </article>
+            <article>
+                <img src="./images/nodejs.png" alt="computer with white background">
+                <h2 class="time">JULY 23, 2025</h2>
+                <h3>Blog three</h3>
+                <p>Node.js has opened up a new world of possibilities in server-side JavaScript for me. 
+           Building APIs and handling backend logic with JavaScript has made my development process more cohesive and efficient.</p>
+            </article>
+            
+        </section>
+        <h4><a href="./posts.html">View More</a></h4>
+        
+    </main>
+    <footer>
+        <h4>My Learning Journal</h4>
+        <p>Copyright ©2025</p>
+    </footer>
+    <script src="index.js"></script>
 </body>
 </html>
